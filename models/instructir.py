@@ -126,7 +126,7 @@ class InstructIR(nn.Module):
         return x
 
 
-def create_model(input_channels = 3, width = 32, enc_blks = [2, 2, 4, 8], middle_blk_num = 12, dec_blks = [2, 2, 2, 2], txtdim=768):
+def create_model(input_channels = 3, width = 32, enc_blks = [2, 2, 4, 8], middle_blk_num = 21, dec_blks = [2, 2, 2, 2], txtdim=768):
 
     net = InstructIR(img_channel=input_channels, width=width, middle_blk_num=middle_blk_num,
                       enc_blk_nums=enc_blks, dec_blk_nums=dec_blks, txtdim=txtdim)
