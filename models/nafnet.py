@@ -178,7 +178,7 @@ class NAFNetLocal(Local_Base, NAFNet):
             self.convert(base_size=base_size, train_size=train_size, fast_imp=fast_imp)
 
 
-def create_nafnet(input_channels = 3, width = 32, enc_blks = [2, 2, 4, 8], middle_blk_num = 12, dec_blks = [2, 2, 2, 2]):
+def create_nafnet(input_channels = 3, width = 32, enc_blks = [2, 2, 4, 8], middle_blk_num = 21, dec_blks = [2, 2, 2, 2]):
     """
     Create Nafnet model
     https://github.com/megvii-research/NAFNet/blob/main/options/test/SIDD/NAFNet-width32.yml
